@@ -159,6 +159,7 @@
     <!-- akhir modal edit -->
 
     <!-- Modal Hapus -->
+
     <div class="modal fade" id="modalHapus<?= $row['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

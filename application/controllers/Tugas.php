@@ -98,8 +98,8 @@ class Tugas extends CI_Controller
             $row[] = $item->nama_jabatan;
             // $row[] = $item->image != null ? '<img src="' . base_url('uploads/product/' . $item->image) . '" class="img" style="width:100px">' : null;
             // add html for action
-            $row[] = '<a href="' . base_url('tugas/edit/' . $item->id) . '" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Update</a>
-                    <a href="' . base_url('tugas/del/' . $item->id) . '" onclick="return confirm(\'Yakin hapus data?\')"  class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Delete</a>';
+            $row[] = '<a href="#" class="badge badge-warning" data-toggle="modal" data-target="#modalEdit' . $item->id . '"><i class="fa fa-pencil"></i> Ubah</a>
+                    <a href="#"  class="badge badge-danger" data-toggle="modal" data-target="#modalHapus' . $item->id . '">Hapus</a>';
             $data[] = $row;
         }
         $output = array(
